@@ -5,7 +5,7 @@ import prisma from '../assets/welcome/prisma.svg'
 import react from '../assets/welcome/react.svg'
 import stack from '../assets/welcome/stack.svg'
 import Alien from '../assets/Alien.svg';
-import circle from '../assets/circle.svg';
+
 import './welcome.css'
 
 function MainLayout(){
