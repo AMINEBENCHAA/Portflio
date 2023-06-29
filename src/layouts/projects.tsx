@@ -2,7 +2,7 @@ import ESIHUB from '../assets/projects/ESIHUB.png';
 import chronos from '../assets/projects/CHRONOS.png';
 import innovium from '../assets/projects/innoviumLogin.png';
 import "../App.css"
-import HorizontalLine from '../shapes/horLine';
+
 import { useState } from 'react';
 
 function ProjectsLayout(){
