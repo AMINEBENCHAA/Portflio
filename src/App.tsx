@@ -5,7 +5,6 @@ import Topbar from './components/Topbar';
 import MainLayout from './layouts/mainLayout';
 import IntroLayout from './layouts/introduction';
 import ProjectsLayout from './layouts/projects';
-import HorizontalLine from './shapes/horLine';
 import Skills from './layouts/skills';
 import SocialBar from './components/SocialBar';
 import Contact from './layouts/contact';
