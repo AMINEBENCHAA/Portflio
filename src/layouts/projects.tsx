@@ -9,7 +9,7 @@ function ProjectsLayout(){
 
   
   const [isOpened, setIsOpened] = useState(false);
-  const [openID, setOpenID] = useState(null);
+
     const projects:Array<any> = [
 {"name":"Innovium",
 "image":innovium
