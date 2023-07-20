@@ -19,13 +19,14 @@ const socials = [
 
 ]
   return (
+    <div className="hidden md:block">
     <div className="social-bar pt-48 space-y-4 flex flex-col fixed  h-screen w-20 items-center">
       {socials.map((item) => (
       
         <SocialCircleCadre Logo={item}/>
         
       ))}
-    </div>
+    </div></div>
   )
 }
 
@@ -33,7 +34,7 @@ const socials = [
 const SocialCircleCadre = ({Logo}:any) => {
     return (
         <a href={Logo.link} >
-      <div className="w-12 h-12  rounded-full border-dashed hover:ml-4 hover:bg-primary   flex items-center justify-center ">
+      <div className="w-12 h-12 dark:bg-white  rounded-full border-dashed hover:ml-4 hover:bg-primary   flex items-center justify-center ">
        <img src={Logo.logo} alt={Logo} className="w-6 h-6 inline-block " />
       </div>
       </a>  

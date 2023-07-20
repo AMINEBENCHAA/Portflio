@@ -26,10 +26,12 @@ const arraySkills = [{name:"Frontend Development",date:2021},{name:"Backend Deve
     return (
     <div id="Skills" className='Skills App-Frame'>
      
-    <div className="flex flex-col absolute left-[25%] justify-center ">
+    <div className="flex flex-col absolute  justify-center w-[100%]">
     
-    <HorizontalLine text="My SKills & Experiences" />
-    <div className='flex absolute top-[80%] space-x-16 mt-24'>
+    <h2 className="text-4xl font-bold mb-8 text-center text-lighttext2 mt-[5%]">
+Explore some of my Skills
+        </h2>
+    <div className='flex absolute top-[80%] space-x-16 mt-24 left-[15%]'>
     <div className='flex  flex-col left-[20%] justify-center  '>
         <div className=''>
          
@@ -64,7 +66,7 @@ const CircleCadre = ({Logo}:any) => {
 
 const ArrayCadre = ({ArrayLogo}:any) => {
     return (
-      <div className="flex space-x-8">
+      <div className="flex space-x-8 ">
     {ArrayLogo.map((item:any) => (
         <CircleCadre Logo={item} />))}
       </div>
@@ -73,7 +75,7 @@ const ArrayCadre = ({ArrayLogo}:any) => {
 
 const Skillcard=({skill}:any)=>{
     return(
-      <div className="card w-72 h-28 bg-base-100 shadow-xl text-center text-justify">
+      <div className="card w-72 h-28  shadow-xl text-center text-justify ">
        <div className="card-body ">
     <div className=" flex">
     <h2 className="card-title ">{skill.name}</h2>

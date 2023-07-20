@@ -35,7 +35,7 @@ function Contact(){
         <div id="Contact" className='App-Frame '>
         <section className="py-16  ">
       <div className="container mx-auto mt-32">
-        <h2 className="text-4xl font-bold mb-8 text-center text-lighttext2">
+        <h2 className="text-4xl font-bold mb-8 text-center text-lighttext2 dark:text-white">
           Take a Coffee with Me
         </h2>
         {!isSent ? (

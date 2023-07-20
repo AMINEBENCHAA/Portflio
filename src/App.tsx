@@ -11,10 +11,21 @@ import SocialBar from './components/SocialBar';
 import Contact from './layouts/contact';
 import Footer from './layouts/footer';
 import Right from './components/Right';
+import { createContext, useContext, useEffect, useState } from 'react';
+
+
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  // Get the user's preferred color scheme
+  useEffect(() => {
+    const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    setIsDarkMode(prefersColorScheme.matches);
+  }, []);
+ 
   return (
-    <div className=' '>  
+    <div style={light}>  
     <Topbar />
     <SocialBar/>
    
@@ -29,5 +40,16 @@ function App() {
     </div>
   );
 }
+
+
+
+ const dark= {
+    backgroundColor: 'black',
+    color: 'white',
+  }
+  const light= {
+    backgroundColor: 'white',
+    color: 'black',
+  }
 
 export default App;

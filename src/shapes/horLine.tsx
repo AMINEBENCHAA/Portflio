@@ -3,7 +3,7 @@ import circle from '../assets/circle.svg';
 const HorizontalLine = ({text}:any) => {
   return (
     <>
-    <div className=" flex justify-center font-bold text-4xl px-36 pt-28  text-lighttext2">
+    <div className=" flex justify-center font-bold text-4xl px-36 pt-28  text-lighttext2 dark:text-white">
     <div className='  '>
 <img src={circle} alt="circle" className="w-6    inline-block " />
 </div>
