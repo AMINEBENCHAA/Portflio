@@ -1,6 +1,6 @@
-import Alien from '../assets/Alien.svg';
+
 import circle from '../assets/circle.svg';
-import HorizontalLine from '../shapes/horLine';
+
 import amine from '../assets/amine.png';
 import "../App.css"
 
