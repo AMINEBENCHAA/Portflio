@@ -6,16 +6,16 @@ import js from '../assets/techs/js.svg';
 import mongodb from '../assets/techs/mongodb.svg';
 import nestjs from '../assets/techs/nestjs.svg';
 import nodejs from '../assets/techs/nodejs.svg';
-import prisma from '../assets/techs/prisma.svg';
+
 import adobe from '../assets/techs/adobe.svg';
 import tailwind from '../assets/techs/tailwind.svg';
 import ts from '../assets/techs/ts.svg';
 import daisy from '../assets/techs/daisy.svg';
 import postg from '../assets/techs/postg.svg';
 import svelte from '../assets/techs/svelte.svg';
-import SocialBar from '../components/SocialBar';
+
 import "../App.css"
-import HorizontalLine from '../shapes/horLine';
+
 
 function Skills() {
 const ArrayLogoFull =[
