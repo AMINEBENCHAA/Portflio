@@ -96,7 +96,7 @@ const ProjectCard1 = ({ image, name, description,tech }:any) => {
     );
   };
   
-const ProjectCard2 = ({ image, name, description,tech,isOpened,toggle}:any) => {
+const ProjectCard2 = ({ image, name, description,tech}:any) => {
 
     return (
     <div  className='card w-56  shadow-xl text-center text-justify'>
