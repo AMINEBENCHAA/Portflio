@@ -53,7 +53,7 @@ Explore a collection of my favorite projects
 </div>
 <div className="ProjectsList flex space-x-12 justify-center mt-8 min-w-full">
 {projects.map((project,index) => (
- (project.tag ==checked || checked=="All" || project.tag=="All" ) &&<ProjectView project={project} index={index} isOpened={isOpened} setIsOpened={setIsOpened} setOpenID={setOpenID}/>
+ (project.tag ==checked || checked=="All" || project.tag=="All" ) &&<ProjectView project={project} index={index} isOpened={isOpened} setIsOpened={setIsOpened} />
 
 
 ))}
@@ -63,8 +63,8 @@ Explore a collection of my favorite projects
 </div>
     )
 }
-const ProjectView=({project,index,isOpened, setIsOpened, setOpenID}:any)=>{
-  const toggle = () =>{ setIsOpened(!isOpened)}
+const ProjectView=({project,index,isOpened, setIsOpened}:any)=>{
+ 
     if (index%2==0){
     return(
      
