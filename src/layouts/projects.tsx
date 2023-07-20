@@ -63,25 +63,25 @@ Explore a collection of my favorite projects
 </div>
     )
 }
-const ProjectView=({project,index,isOpened, setIsOpened}:any)=>{
+const ProjectView=({project,index}:any)=>{
  
     if (index%2==0){
     return(
      
-    <ProjectCard2 image={project.image} name={project.name} tech={project.tech} description={project.description} isOpened={isOpened}  toggle={toggle}/>)}
+    <ProjectCard2 image={project.image} name={project.name} tech={project.tech} description={project.description} />)}
     if (index%2==1){
         return(
        
-        <ProjectCard1 image={project.image} name={project.name} tech={project.tech} description={project.description} isOpened={isOpened}  toggle={toggle}/>)}
+        <ProjectCard1 image={project.image} name={project.name} tech={project.tech} description={project.description} />)}
 
     }
 
 
-const ProjectCard1 = ({ image, name, description,tech ,isOpened,toggle}:any) => {
+const ProjectCard1 = ({ image, name, description,tech }:any) => {
   
 
     return (
-    <div onClick={toggle} className={`${isOpened ? 'card w-56  shadow-xl text-center text-justify ho':  'card w-56  shadow-xl text-center text-justify ho'}`}>
+    <div  className= 'card w-56  shadow-xl text-center text-justify ho'>
   <div className="card-body border-b-4 border-mauve">
     <div className="justify-center flex">
     <h2 className="card-title ">{name}</h2></div>
@@ -99,7 +99,7 @@ const ProjectCard1 = ({ image, name, description,tech ,isOpened,toggle}:any) => 
 const ProjectCard2 = ({ image, name, description,tech,isOpened,toggle}:any) => {
 
     return (
-    <div onClick={toggle} className={`${isOpened ? 'card w-56  shadow-xl text-center text-justify ho':'card w-56  shadow-xl text-center text-justify'}`}>
+    <div  className='card w-56  shadow-xl text-center text-justify'>
         <figure><img src={image} alt={name} /></figure>
   <div className="card-body border-t-4 border-mauve">
     <div className="justify-center flex">
